@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  display: grid;
+}
+
+header {
+  background-color: #E8E288;
+  padding: 1em;
+}
+
+nav {
+  background-color: #F19C79;
+  padding: 2em;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #7DCE82;
+  padding: 5em;
+}
+.main-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #26877F;
+  padding: 10em;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #E8E288;
+  padding: 4em;
+}
