@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3em;
   color: #2b4570;
 }
 
@@ -37,7 +37,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color:#f19c79;
+  color: #f19c79;
 }
 
 header > img {
@@ -127,28 +127,42 @@ article {
 }
 
 #banner-text-block {
-  background-color: rgba(241, 157, 121, 0.8);
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  align-items: center;
+  background-color: rgba(241, 157, 121, 0.8);
   width: 100%;
   height: 50%;
 }
 
+#banner-title a {
+  color: #2b4570;
+  text-decoration: none;
+  margin-top: 5em;
+}
+
+#banner-title a:hover {
+  color: #26877f;
+  text-shadow: 1px 1px 1px #2b4570;
+  text-decoration: none;
+}
+
 #banner-text {
   color: #26877f;
-  font-size: 2.5rem;
+  text-shadow: 1px 1px 1px #2b4570;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 @media (max-width: 800px) {
   #banner-text {
-
     font-size: 1.5rem;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   #banner-text {
-
     font-size: 1rem;
   }
 }
@@ -158,43 +172,69 @@ article {
   row-gap: 1rem;
 }
 
-.article-one {
-  background-color:#26877f;
-  color:#7DCE82;
-  font-weight: bold;
-  border-radius: 12px;
-  padding: 2rem;
-  color: #E8E288;
+@media (max-width: 800px) {
+  .main-three-columns {
+    margin-top: 2rem;
+  }
 }
 
-.article-two {
-  background-color:#26877f;
-  color:#E8E288;
+.card {
+  background-color: #26877f;
+  color: #e8e288;
   font-weight: bold;
   border-radius: 12px;
   padding: 2rem;
 }
 
-.article-three {
-  background-color:#26877f;
-  color: #E8E288;
-  font-weight: bold;
-  font-size: 1.2rem;
-  border-radius: 12px;
-  padding: 2rem;
+.card a {
+  color: #f19c79;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #7dce82;
+  text-shadow: 1px 1px 1px #2b4570;
 }
 
 .contact-container {
   display: flex;
   flex-direction: row;
-
+  gap: 5rem;
 }
-footer {
+.container-footer {
   display: flex;
   margin-top: 6rem;
 }
 
-footer div {
+.container-footer div {
   flex: 1;
   align-items: baseline;
+}
+
+.logo-tagline {
+  display: flex;
+  direction: column;
+  gap: 5rem;
+}
+
+@media (max-width: 800px) {
+  .logo-tagline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+#tagline {
+  color: #2b4570;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.container-footer #copyright {
+  color: #26877f;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: end;
+  padding-top: 8rem;
 }
