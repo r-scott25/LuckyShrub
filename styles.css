@@ -54,19 +54,18 @@ h2 {
   color: #f19c79;
 }
 
+
+
+/* Header */
 header > a img {
   width: 125px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transition: transform 1s;
 }
 
-header > a img:hover {
-  transform: scale(1.25, 1.25);
-  transition: 2s;
-}
 
+/* Navigation Bar */
 nav .container {
   display: flex;
   flex-direction: row;
@@ -104,9 +103,6 @@ nav li a {
   margin: 0 25px;
 }
 
-nav li a:visited {
-  color: #2b4570;
-}
 nav li a:hover {
   text-shadow: 1px 1px 1px #2b4570;
 }
@@ -116,6 +112,8 @@ nav li a:active {
   text-shadow: 1px 1px 1px #26877f;
 }
 
+
+/* Main Content */
 section {
   display: flex;
 }
@@ -129,6 +127,9 @@ section {
 article {
   flex: 1;
 }
+
+
+/* Promotional Banner */
 
 .banner-container {
   display: flex;
@@ -170,6 +171,7 @@ article {
 }
 
 
+/* Three Informational Cards */
 .main-three-columns {
   display: flex;
   column-gap: 1rem;
@@ -189,11 +191,6 @@ article {
   font-weight: bold;
   border-radius: 12px;
   padding: 2rem;
-  transform: transition 1.5s;
-}
-
-.card:hover {
-  transform: scale(1.05);
 }
 
 .card a {
@@ -202,8 +199,7 @@ article {
 }
 
 .card a:hover {
-  color: #7dce82;
-  text-shadow: 1px 1px 1px #2b4570;
+  text-shadow: 2px 2px 2px #2b4570;
 }
 
 .contact-container {
@@ -211,6 +207,10 @@ article {
   flex-direction: row;
   gap: 5rem;
 }
+
+
+/* Footer */
+
 .container-footer {
   display: flex;
   margin-top: 6rem;
