@@ -169,18 +169,6 @@ article {
   text-decoration: none;
 }
 
-/* #banner-text {
-  color: #26877f;
-  text-shadow: 1px 1px 1px #2b4570;
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-@media (max-width: 800px) {
-  #banner-text {
-    font-size: 1.5rem;
-  }
-} */
 
 .main-three-columns {
   display: flex;
